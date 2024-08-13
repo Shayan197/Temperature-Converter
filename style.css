@@ -22,8 +22,7 @@ main {
   border-radius: 15px;
   display: flex;
   flex-direction: column;
-  padding: 100px;
-  gap: 70px 0;
+  padding: 2%;
 }
 .container:hover {
   box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.3),
@@ -36,7 +35,6 @@ main {
   font-size: 40px;
 }
 .card {
-  border-radius: 15px;
   box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3),
     -5px -5px 5px rgba(255, 255, 255, 0.3);
   margin: 20px auto;
@@ -45,12 +43,12 @@ main {
   align-items: center;
   padding: 30px 0;
   width: 90%;
+  flex: 1 1 auto;
 }
 .card p {
   font-size: 25px;
   font-weight: 400;
   letter-spacing: 3px;
-  color: #f7eeee;
 }
 .card input {
   padding: 10px 100px;
@@ -81,12 +79,14 @@ button:hover {
   border: none;
   background-color: #d4a37368;
 }
-.buttons {
-  text-align: center;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
-@media (max-width: 1260px) {
+@media (max-width: 1310px) {
   main {
-    padding: 100px;
+    padding: 2%;
   }
   .container {
     width: 100%;
@@ -100,71 +100,40 @@ button:hover {
     margin: 15px auto;
     padding: 15px 0;
     width: 100%;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  button {
-    width: 80%;
+    flex: 1 1 auto;
   }
 }
-@media (max-width: 760px) {
-  main {
-    padding: 50px;
-  }
+@media (max-width: 765px) {
   .container {
     width: 100%;
     gap: 10px 0;
     padding: 20px;
+  }
+  .container h1 {
+    font-size: 35px;
   }
   .card input {
     padding: 7px 40px;
   }
   .card {
     margin: 15px auto;
-    padding: 10px 0;
-    width: 100%;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-  button {
-    width: 80%;
-  }
-}
-@media (max-width: 540px) {
-  main {
     padding: 10px;
-  }
-  .container {
     width: 100%;
-    gap: 10px 0;
-    padding: 5px;
+    flex-direction: column;
   }
   .card input {
-    padding: 5px 20px;
-  }
-  .card {
-    margin: 10px auto;
-    padding: 10px 5px;
+    margin: 15px auto;
+    padding: 10px;
     width: 100%;
+    flex-direction: column;
   }
   .card p {
-    font-size: 15px;
-  }
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    font-size: 20px;
   }
   button {
-    width: 80%;
+    width: 100%;
+  }
+  #back {
+    width: 70%;
   }
 }
