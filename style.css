@@ -1,0 +1,170 @@
+:root {
+  --overall-1: #f9f9f9;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--overall-1);
+}
+body {
+  background: linear-gradient(to left, #dcdcdc, #a0a0a0, #d4a373);
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 70%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  gap: 70px 0;
+}
+.container:hover {
+  box-shadow: 12px 12px 12px rgb(0, 0, 0, 0.3),
+    -12px -12px 12px rgba(255, 255, 255, 0.3);
+}
+.container h1 {
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+.card {
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.3),
+    -5px -5px 5px rgba(255, 255, 255, 0.3);
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 0;
+  width: 90%;
+}
+.card p {
+  font-size: 25px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #f7eeee;
+}
+.card input {
+  padding: 10px 100px;
+  border: 3px solid rgba(0, 0, 0, 0.155);
+  border-radius: 10px;
+  background-color: transparent;
+  text-align: center;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+#faranhiet,
+#kelvin {
+  display: none;
+}
+button {
+  background-color: transparent;
+  padding: 10px 40px;
+  width: 200px;
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  border-radius: 7px;
+  margin: auto 20px;
+  cursor: pointer;
+}
+button:hover {
+  border: none;
+  background-color: #d4a37368;
+}
+.buttons {
+  text-align: center;
+}
+@media (max-width: 1260px) {
+  main {
+    padding: 100px;
+  }
+  .container {
+    width: 100%;
+    gap: 20px 0;
+    padding: 50px;
+  }
+  .card input {
+    padding: 10px 50px;
+  }
+  .card {
+    margin: 15px auto;
+    padding: 15px 0;
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  button {
+    width: 80%;
+  }
+}
+@media (max-width: 760px) {
+  main {
+    padding: 50px;
+  }
+  .container {
+    width: 100%;
+    gap: 10px 0;
+    padding: 20px;
+  }
+  .card input {
+    padding: 7px 40px;
+  }
+  .card {
+    margin: 15px auto;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  button {
+    width: 80%;
+  }
+}
+@media (max-width: 540px) {
+  main {
+    padding: 10px;
+  }
+  .container {
+    width: 100%;
+    gap: 10px 0;
+    padding: 5px;
+  }
+  .card input {
+    padding: 5px 20px;
+  }
+  .card {
+    margin: 10px auto;
+    padding: 10px 5px;
+    width: 100%;
+  }
+  .card p {
+    font-size: 15px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  button {
+    width: 80%;
+  }
+}
